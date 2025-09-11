@@ -1,2 +1,0 @@
-# muckett.tech
-muckett.tech
