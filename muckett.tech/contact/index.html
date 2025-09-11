@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muckett - Contact</title>
+    <link rel="icon" type="image/png" href="../logo.png">
+    <meta name="description" content="Contact Muckett for professional tech services, support, and consultations.">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="Muckett logo" class="logo-img" />
+                    <h2 class="logo-text">Muckett</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="../services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../device-repair/">Device Repair</a></li>
+                            <li><a href="../device-setup/">Device Setup</a></li>
+                            <li><a href="../website-development/">Website Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Contact) -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contact <span class="accent">Muckett</span></h1>
+                <p class="hero-description">Reach out for support, quotes, or general enquiries. We respond quickly.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Send a Message</a>
+                    <a href="../services/" class="btn btn-secondary">View Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-visual">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to solve your tech challenges? Contact us for a free consultation.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>07727299900</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@muckett.tech</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Available for on-site service</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 5PM-10PM, Sat: 10AM-5PM</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
+                    <!-- Web3Forms required fields -->
+                    <input type="hidden" name="access_key" value="bea4a7e8-4337-45ef-86f3-0240a29107fa">
+                    <input type="hidden" name="subject" value="New Contact via Muckett.tech">
+                    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="device-repair">Device Repair & Troubleshooting</option>
+                            <option value="device-setup">Device Setup & Configuration</option>
+                            <option value="website-development">Website Development</option>
+                            <option value="consultation">Free Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your tech needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Muckett</h3>
+                    <p>Professional tech solutions for modern businesses and individuals.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../device-repair/">Device Repair</a></li>
+                        <li><a href="../device-setup/">Device Setup</a></li>
+                        <li><a href="../website-development/">Website Development</a></li>
+                        <li><a href="./">Free Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>hello@muckett.tech</li>
+                        <li>07727299900</li>
+                        <li>Mon-Fri: 5PM-10PM</li>
+                        <li>Sat: 10AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Muckett. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Submission Success Modal -->
+    <div id="formModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+            <h3 class="modal-title">Thanks!</h3>
+            <p class="modal-text">Your ticket has been submitted. We aim to get back to you within 24h.</p>
+            <button type="button" class="btn btn-primary modal-close">Close</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
