@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -783,3 +783,24 @@ section {
 
 /* Override list bullet rendering for features */
 .service-features li::before { content: '✓' !important; }
+
+
+/* Four service cards on wide screens */
+.about-content-single {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+}
+
+.form-privacy,
+.privacy-notice {
+    font-size: 0.9375rem;
+    color: #64748b;
+    margin: 0 0 1.25rem;
+    line-height: 1.55;
+}
+
+.footer-legal {
+    color: #94a3b8;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
