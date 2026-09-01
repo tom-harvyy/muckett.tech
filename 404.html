@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found · Muckett</title>
+  <title>Page not found | Muckett.tech</title>
+  <meta name="description" content="That page is not on muckett.tech. Try the homepage or contact Tom at hello@muckett.tech.">
   <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://muckett.tech/404.html">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Page not found | Muckett.tech">
+  <meta property="og:description" content="That page is not on muckett.tech.">
+  <meta property="og:image" content="https://muckett.tech/logo.png">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -19,11 +25,12 @@
       <div class="nav-container">
         <div class="nav-logo">
           <img src="/logo.png" alt="Muckett logo" class="logo-img" />
-          <h2 class="logo-text">Muckett</h2>
+          <span class="logo-text">Muckett</span>
         </div>
         <ul class="nav-menu">
           <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="services/" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="colne/" class="nav-link">Colne</a></li>
           <li class="nav-item"><a href="about/" class="nav-link">About</a></li>
           <li class="nav-item"><a href="contact/" class="nav-link">Contact</a></li>
         </ul>
@@ -31,21 +38,18 @@
       </div>
     </nav>
   </header>
-
   <main class="not-found">
     <div class="card">
       <h1>Page moved or not found</h1>
-      <p class="muted">If you followed an old link with “.html”, we’ll redirect you to the new, cleaner URL.</p>
+      <p class="muted">If you followed an old link with “.html”, you will be sent to the cleaner URL.</p>
       <p><a class="btn btn-primary" href="/">Go to homepage</a></p>
     </div>
   </main>
-
   <script>
     (function() {
       var path = (window.location.pathname || '').toLowerCase();
       var query = window.location.search || '';
       var hash = window.location.hash || '';
-
       var map = {
         '/index.html': '/',
         '/about.html': '/about/',
@@ -53,14 +57,11 @@
         '/services.html': '/services/',
         '/device-repair.html': '/device-repair/',
         '/device-setup.html': '/device-setup/',
-        '/website-development.html': '/website-development/'
+        '/website-development.html': '/website-development/',
+        '/website-hosting.html': '/website-hosting/',
+        '/colne.html': '/colne/'
       };
-
-      if (map[path]) {
-        window.location.replace(map[path] + query + hash);
-        return;
-      }
-
+      if (map[path]) { window.location.replace(map[path] + query + hash); return; }
       if (path.endsWith('.html')) {
         var target = path.slice(0, -5);
         if (target === '/index') target = '/';

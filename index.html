@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muckett - Professional Tech Services</title>
+    <title>Tech Help & Websites in Colne | Muckett.tech</title>
+    <meta name="description" content="Muckett.tech helps businesses and homes in Colne and Pendle with websites (built and hosted), device repair, and setup. Evenings and Saturdays. Call 07727299900 or email hello@muckett.tech.">
+    <link rel="canonical" href="https://muckett.tech/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Tech Help & Websites in Colne | Muckett.tech">
+    <meta property="og:description" content="Muckett.tech helps businesses and homes in Colne and Pendle with websites (built and hosted), device repair, and setup. Evenings and Saturdays. Call 07727299900 or email hello@muckett.tech.">
+    <meta property="og:url" content="https://muckett.tech/">
+    <meta property="og:image" content="https://muckett.tech/logo.png">
+    <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/png" href="logo.png">
-    <meta name="description" content="Professional tech services including device repair, setup solutions, and website development for individuals and businesses.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "name": "Muckett.tech",
+  "legalName": "Tom Hepworth-Harvey trading as muckett.tech",
+  "url": "https://muckett.tech/",
+  "email": "hello@muckett.tech",
+  "telephone": "+447727299900",
+  "image": "https://muckett.tech/logo.png",
+  "areaServed": ["Colne", "Pendle", "Lancashire"],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "17:00", "closes": "22:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00"}
+  ]
+}
+    </script>
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
                     <img src="logo.png" alt="Muckett logo" class="logo-img" />
-                    <h2 class="logo-text">Muckett</h2>
+                    <span class="logo-text">Muckett</span>
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="./" class="nav-link">Home</a>
-                    </li>
+                    <li class="nav-item"><a href="./" class="nav-link active">Home</a></li>
                     <li class="nav-item has-dropdown">
                         <a href="services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="device-repair/">Device Repair</a></li>
-                            <li><a href="device-setup/">Device Setup</a></li>
-                            <li><a href="website-development/">Website Development</a></li>
+                            <li><a href="website-hosting/">Website hosting</a></li>
+                            <li><a href="website-development/">Website design</a></li>
+                            <li><a href="device-repair/">Device repair</a></li>
+                            <li><a href="device-setup/">Device setup</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="about/" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact/" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="colne/" class="nav-link">Colne</a></li>
+                    <li class="nav-item"><a href="about/" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact/" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-toggle">
                     <span class="bar"></span>
@@ -47,187 +67,131 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    Professional Tech Solutions for 
-                    <span class="accent">Modern Businesses</span>
-                </h1>
-                <p class="hero-description">
-                    We provide comprehensive tech services including device repair, setup solutions, 
-                    and website development to keep your business running smoothly.
-                </p>
+                <h1 class="hero-title">Tech help and websites for <span class="accent">Colne and Pendle</span></h1>
+                <p class="hero-description">I make and host websites for local businesses, and I help with the day-to-day tech — slow PCs, new kit, Wi-Fi, and software problems. Based around Colne, Lancashire. Evenings Monday to Friday, Saturday mornings and afternoons.</p>
                 <div class="hero-buttons">
-                    <a href="contact/" class="btn btn-primary">Get Started</a>
-                    <a href="services/" class="btn btn-secondary">Our Services</a>
+                    <a href="contact/" class="btn btn-primary">Get in touch</a>
+                    <a href="services/" class="btn btn-secondary">What I do</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-visual">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-            </div>
+            <div class="hero-image"><div class="hero-visual"><i class="fas fa-laptop-code"></i></div></div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">
-                    Comprehensive tech solutions tailored to your needs
-                </p>
+                <h2 class="section-title">Websites I build and host</h2>
+                <p class="section-description">Straightforward sites for local businesses, then hosted and looked after so you are not left with a folder of files.</p>
             </div>
-            
             <div class="services-grid">
-                <!-- Device Repair Service -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="service-title">Device Repair & Troubleshooting</h3>
-                    <p class="service-description">
-                        Expert diagnosis and repair of software issues on computers, phones, 
-                        tablets, and other devices. Fast, reliable solutions to get you back online.
-                    </p>
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="service-title">Website hosting and care</h3>
+                    <p class="service-description">Static sites hosted and looked after: the site stays online, certificates and backups are kept in order, and small updates do not become your weekend job. Contact for pricing.</p>
+                    <ul class="service-features">
+                        <li>Hosting for business sites</li>
+                        <li>Certificates and backups</li>
+                        <li>Small updates</li>
+                        <li>Contact for pricing</li>
+                    </ul>
+                    <a href="website-hosting/" class="service-link">Website hosting <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3 class="service-title">Website design and build</h3>
+                    <p class="service-description">Clear sites that load properly on a phone, with your contact details easy to find — not a twelve-page brochure you will never update.</p>
+                    <ul class="service-features">
+                        <li>Business sites and landing pages</li>
+                        <li>Works on phones</li>
+                        <li>Clear contact details</li>
+                        <li>Then hosted if you want</li>
+                    </ul>
+                    <a href="website-development/" class="service-link">Website design <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="service-title">Device repair</h3>
+                    <p class="service-description">Software problems, viruses and slow machines on PCs, Macs, phones and tablets.</p>
                     <ul class="service-features">
                         <li>Software troubleshooting</li>
-                        <li>Virus removal & security</li>
-                        <li>Performance optimization</li>
-                        <li>Data recovery services</li>
+                        <li>Virus removal</li>
+                        <li>Tune-ups</li>
+                        <li>On-site where it helps</li>
                     </ul>
-                    <a href="device-repair/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="device-repair/" class="service-link">Device repair <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Device Setup Service -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="service-title">Device Setup & Configuration</h3>
-                    <p class="service-description">
-                        Professional setup and configuration services for individuals and businesses. 
-                        From single devices to complete office networks.
-                    </p>
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3 class="service-title">Device setup</h3>
+                    <p class="service-description">New PCs, phones and office networks set up properly — Wi-Fi, backups and the boring bits done right.</p>
                     <ul class="service-features">
-                        <li>New device configuration</li>
-                        <li>Network setup & security</li>
-                        <li>Business system integration</li>
-                        <li>Training & support</li>
+                        <li>New device setup</li>
+                        <li>Wi-Fi and networks</li>
+                        <li>Microsoft 365</li>
+                        <li>Backups</li>
                     </ul>
-                    <a href="device-setup/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Website Development Service -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3 class="service-title">Website Development</h3>
-                    <p class="service-description">
-                        Custom website development for businesses of all sizes. Modern, responsive, 
-                        and optimized for performance and search engines.
-                    </p>
-                    <ul class="service-features">
-                        <li>Custom web design</li>
-                        <li>E-commerce solutions</li>
-                        <li>SEO optimization</li>
-                        <li>Ongoing maintenance</li>
-                    </ul>
-                    <a href="website-development/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="device-setup/" class="service-link">Device setup <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="section-title">Why Choose Muckett?</h2>
-                    <p class="about-description">
-                        With years of experience in the tech industry, we provide reliable, 
-                        professional solutions that help individuals and businesses thrive in 
-                        the digital world.
-                    </p>
+                    <h2 class="section-title">Why work with Muckett.tech</h2>
+                    <p class="about-description">Independent tech help for people and businesses in Colne and the Pendle area.</p>
                     <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Expert technicians with proven experience</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Fast response times and reliable service</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Competitive pricing with transparent quotes</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Ongoing support and maintenance</span>
-                        </div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Evening and Saturday hours, so you are not stuck waiting on a 9–5 shop.</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>On-site help for homes and businesses in Colne and across Pendle.</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Clear quotes before work starts.</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>I build and host websites, and I fix and set up the kit you already have.</span></div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3 class="stat-number">100+</h3>
-                        <p class="stat-label">Software Issues Resolved</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="stat-number">50+</h3>
-                        <p class="stat-label">Systems Configured (Mobile + PCs)</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="stat-number">10+</h3>
-                        <p class="stat-label">Websites Built</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="stat-number">99%</h3>
-                        <p class="stat-label">Client Satisfaction</p>
-                    </div>
+                <div class="about-text">
+                    <h2 class="section-title">Tech support for local businesses</h2>
+                    <p class="about-description">Straightforward, practical help. Slow PCs, new kit, Wi-Fi, software problems. I come on-site when that is the sensible way to do it.</p>
+                    <h2 class="section-title">Colne, Pendle and nearby</h2>
+                    <p class="about-description">Colne is the base I talk about because that is where I am. I also help businesses in the rest of Pendle and nearby Lancashire. <a href="colne/">More about working in Colne</a>.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">
-                    Ready to solve your tech challenges? Contact us for a free consultation.
-                </p>
+                <h2 class="section-title">Get in touch</h2>
+                <p class="section-description">Call <a href="tel:+447727299900">07727299900</a> or email <a href="mailto:hello@muckett.tech">hello@muckett.tech</a>. Website hosting is priced on enquiry — there is no public price list.</p>
             </div>
-            
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3>Contact</h3>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>07727299900</span>
+                        <span><a href="tel:+447727299900">07727299900</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>hello@muckett.tech</span>
+                        <span><a href="mailto:hello@muckett.tech">hello@muckett.tech</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Available for on-site service</span>
+                        <span>On-site in Colne, Pendle and nearby — no street address published</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
-                        <span>Mon-Fri: 5PM-10PM, Sat: 10AM-5PM</span>
+                        <span>Mon–Fri: 5PM–10PM, Sat: 10AM–5PM</span>
                     </div>
                 </div>
-                
+        <p class="privacy-notice">This form goes to me, Tom Hepworth-Harvey trading as muckett.tech. I collect your name, email, phone number and message so I can reply to your enquiry. The form is sent through Web3Forms, who process it as a processor, and that processing happens outside the UK (India/AWS). Email <a href="mailto:hello@muckett.tech">hello@muckett.tech</a> if you want this data changed or deleted. You can also complain to the ICO at <a href="https://ico.org.uk/" rel="noopener noreferrer">ico.org.uk</a>.</p>
+
                 <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
-                    <!-- Web3Forms required fields -->
                     <input type="hidden" name="access_key" value="bea4a7e8-4337-45ef-86f3-0240a29107fa">
                     <input type="hidden" name="subject" value="New Contact via Muckett.tech">
                     <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important;">
@@ -247,68 +211,64 @@
                         <label for="service">Service Needed</label>
                         <select id="service" name="service" required>
                             <option value="">Select a service</option>
-                            <option value="device-repair">Device Repair & Troubleshooting</option>
-                            <option value="device-setup">Device Setup & Configuration</option>
-                            <option value="website-development">Website Development</option>
-                            <option value="consultation">Free Consultation</option>
+                            <option value="website-hosting">Website hosting (contact for pricing)</option>
+                            <option value="website-development">Website design and build</option>
+                            <option value="device-repair">Device repair and troubleshooting</option>
+                            <option value="device-setup">Device setup and configuration</option>
+                            <option value="consultation">General enquiry</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your tech needs..."></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me what you need help with..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+
             </div>
+
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Muckett</h3>
-                    <p>Professional tech solutions for modern businesses and individuals.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <h3>Muckett.tech</h3>
+                    <p>Tom Hepworth-Harvey trading as muckett.tech. Independent tech help and website hosting for Colne, Pendle and Lancashire.</p>
+                    <p>Colne, Pendle, Lancashire.</p>
+                    <!-- UK street address: not published until Tom supplies one. Do not invent. -->
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="device-repair/">Device Repair</a></li>
-                        <li><a href="device-setup/">Device Setup</a></li>
-                        <li><a href="website-development/">Website Development</a></li>
-                        <li><a href="contact/">Free Consultation</a></li>
+                        <li><a href="website-hosting/">Website hosting</a></li>
+                        <li><a href="website-development/">Website design</a></li>
+                        <li><a href="device-repair/">Device repair</a></li>
+                        <li><a href="device-setup/">Device setup</a></li>
+                        <li><a href="colne/">Colne and Pendle</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>hello@muckett.tech</li>
-                        <li>07727299900</li>
-                        <li>Mon-Fri: 5PM-10PM</li>
-                        <li>Sat: 10AM-5PM</li>
+                        <li><a href="mailto:hello@muckett.tech">hello@muckett.tech</a></li>
+                        <li><a href="tel:+447727299900">07727299900</a></li>
+                        <li>Mon–Fri: 5PM–10PM</li>
+                        <li>Sat: 10AM–5PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Muckett. All rights reserved.</p>
+                <p>&copy; 2026 Tom Hepworth-Harvey trading as muckett.tech. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Submission Success Modal -->
     <div id="formModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-backdrop"></div>
         <div class="modal-dialog" role="document">
             <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
-            <h3 class="modal-title">Thanks!</h3>
-            <p class="modal-text">Your ticket has been submitted. We aim to get back to you within 24h.</p>
+            <h3 class="modal-title">Thanks</h3>
+            <p class="modal-text">Your message is in. I will get back to you as soon as I can.</p>
             <button type="button" class="btn btn-primary modal-close">Close</button>
         </div>
     </div>
