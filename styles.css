@@ -783,3 +783,41 @@ section {
 
 /* Override list bullet rendering for features */
 .service-features li::before { content: '✓' !important; }
+
+
+/* Featured hosting card */
+.featured-service {
+    margin-bottom: 2rem;
+}
+
+.service-card.featured {
+    border-color: #bfdbfe;
+    background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+}
+
+@media (min-width: 900px) {
+    .services-grid.four-up {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 0.75rem;
+}
+
+.form-note {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin: -0.25rem 0 1.5rem;
+}
+
+.hero-description a,
+.section-description a,
+.service-description a {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

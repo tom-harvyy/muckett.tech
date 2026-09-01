@@ -1,142 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muckett - Device Setup & Configuration</title>
-  <meta name="description" content="Professional setup and configuration for computers, mobiles, and networks - secure, optimized, and ready to go.">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="icon" type="image/png" href="../logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device setup and configuration | Muckett</title>
+    <meta name="description" content="New device setup, secure Wi-Fi and business system configuration for home and office. Independent local tech help from Muckett. Contact us for pricing.">
+    <link rel="canonical" href="https://muckett.tech/device-setup/">
+    <meta property="og:title" content="Device setup and configuration | Muckett">
+    <meta property="og:description" content="New device setup, secure Wi-Fi and business system configuration for home and office. Independent local tech help from Muckett. Contact us for pricing.">
+    <meta property="og:url" content="https://muckett.tech/device-setup/">
+    <meta property="og:image" content="https://muckett.tech/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="Muckett">
+    <link rel="icon" type="image/png" href="../logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://muckett.tech/#organization",
+                "name": "Muckett",
+                "url": "https://muckett.tech/",
+                "logo": "https://muckett.tech/logo.png",
+                "email": "hello@muckett.tech",
+                "telephone": "+447727299900"
+            },
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://muckett.tech/#localbusiness",
+                "name": "Muckett",
+                "url": "https://muckett.tech/",
+                "image": "https://muckett.tech/logo.png",
+                "email": "hello@muckett.tech",
+                "telephone": "+447727299900",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "17:00",
+                        "closes": "22:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Saturday",
+                        "opens": "10:00",
+                        "closes": "17:00"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <img src="../logo.png" alt="Muckett logo" class="logo-img" />
-          <h2 class="logo-text">Muckett</h2>
-        </div>
-        <ul class="nav-menu">
-          <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-          <li class="nav-item has-dropdown">
-            <a class="nav-link" href="../services/">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="../device-repair/">Device Repair</a></li>
-              <li><a href="./">Device Setup</a></li>
-              <li><a href="../website-development/">Website Development</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="../about/">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="../contact/">Contact</a></li>
-        </ul>
-        <div class="nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-      </div>
-    </nav>
-  </header>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="Muckett logo" class="logo-img" />
+                    <h2 class="logo-text">Muckett</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="../services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../website-hosting/">Website Hosting</a></li>
+                            <li><a href="../device-repair/">Device Repair</a></li>
+                            <li><a href="./">Device Setup</a></li>
+                            <li><a href="../website-development/">Website Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact/" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <h1 class="hero-title">Device Setup <span class="accent">& Configuration</span></h1>
-        <p class="hero-description">New hardware, clean installs, secure networks, and seamless integrations for home and office.</p>
-        <div class="hero-buttons">
-          <a href="../contact/" class="btn btn-primary">Get a Quote</a>
-          <a href="#packages" class="btn btn-secondary">What's Included</a>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Device Setup <span class="accent">&amp; Configuration</span></h1>
+                <p class="hero-description">New hardware, clean installs, secure networks, and seamless integrations for home and office.</p>
+                <div class="hero-buttons">
+                    <a href="../contact/" class="btn btn-primary">Get a Quote</a>
+                    <a href="#included" class="btn btn-secondary">What's Included</a>
+                </div>
+            </div>
+            <div class="hero-image"><div class="hero-visual"><i class="fas fa-network-wired"></i></div></div>
         </div>
-      </div>
-      <div class="hero-image"><div class="hero-visual"><i class="fas fa-network-wired"></i></div></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Packages / Includes -->
-  <section id="packages" class="services">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">What's Included</h2>
-        <p class="section-description">Everything you need to get up and running securely and efficiently.</p>
-      </div>
+    <section id="included" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What's Included</h2>
+                <p class="section-description">Everything you need to get up and running securely and efficiently.</p>
+            </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-laptop"></i></div>
-          <h3 class="service-title">New Device Setup</h3>
-          <p class="service-description">Configure PCs, Macs, phones, and tablets with best-practice settings.</p>
-          <ul class="service-features">
-            <li>User accounts & updates</li>
-            <li>Essential apps & drivers</li>
-            <li>Cloud sync & backups</li>
-            <li>Email & printer setup</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-wifi"></i></div>
-          <h3 class="service-title">Network & Security</h3>
-          <p class="service-description">Wi-Fi coverage, router settings, device access, and security hardening.</p>
-          <ul class="service-features">
-            <li>Secure Wi-Fi & guest networks</li>
-            <li>Firewall & DNS filtering</li>
-            <li>NAS & shared drives</li>
-            <li>Remote access setup</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-users"></i></div>
-          <h3 class="service-title">Business Integration</h3>
-          <p class="service-description">Join devices to your tools and workflows for smooth collaboration.</p>
-          <ul class="service-features">
-            <li>Microsoft 365 / Google Workspace</li>
-            <li>Password managers & SSO</li>
-            <li>Shared calendars & files</li>
-            <li>Policy & profile setup</li>
-          </ul>
-        </div>
-      </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                    <h3 class="service-title">New Device Setup</h3>
+                    <p class="service-description">Configure PCs, Macs, phones, and tablets with best-practice settings.</p>
+                    <ul class="service-features">
+                        <li>User accounts &amp; updates</li>
+                        <li>Essential apps &amp; drivers</li>
+                        <li>Cloud sync &amp; backups</li>
+                        <li>Email &amp; printer setup</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-wifi"></i></div>
+                    <h3 class="service-title">Network &amp; Security</h3>
+                    <p class="service-description">Wi-Fi coverage, router settings, device access, and security hardening.</p>
+                    <ul class="service-features">
+                        <li>Secure Wi-Fi &amp; guest networks</li>
+                        <li>Firewall &amp; DNS filtering</li>
+                        <li>NAS &amp; shared drives</li>
+                        <li>Remote access setup</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="service-title">Business Integration</h3>
+                    <p class="service-description">Join devices to your tools and workflows for smooth collaboration.</p>
+                    <ul class="service-features">
+                        <li>Microsoft 365 / Google Workspace</li>
+                        <li>Password managers &amp; SSO</li>
+                        <li>Shared calendars &amp; files</li>
+                        <li>Policy &amp; profile setup</li>
+                    </ul>
+                </div>
+            </div>
 
-      <div style="text-align:center; margin-top:2rem;">
-        <a class="btn btn-primary" href="../contact/">Get a Quote</a>
-      </div>
-    </div>
-  </section>
+            <div style="text-align:center; margin-top:2rem;">
+                <a class="btn btn-primary" href="../contact/">Get a Quote</a>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Muckett</h3>
-          <p>Professional tech solutions for modern businesses and individuals.</p>
-          <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Muckett</h3>
+                    <p>We host and look after business websites, with friendly local tech help when you need it.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../website-hosting/">Website Hosting</a></li>
+                        <li><a href="../device-repair/">Device Repair</a></li>
+                        <li><a href="./">Device Setup</a></li>
+                        <li><a href="../website-development/">Website Development</a></li>
+                        <li><a href="../contact/">Contact for pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>hello@muckett.tech</li>
+                        <li>07727299900</li>
+                        <li>Mon–Fri 5PM–10PM</li>
+                        <li>Sat 10AM–5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muckett. All rights reserved.</p>
+            </div>
         </div>
-        <div class="footer-section">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="../device-repair/">Device Repair</a></li>
-            <li><a href="./">Device Setup</a></li>
-            <li><a href="../website-development/">Website Development</a></li>
-            <li><a href="../contact/">Free Consultation</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <ul>
-            <li>hello@muckett.tech</li>
-            <li>07727299900</li>
-            <li>Mon-Fri: 5PM-10PM</li>
-            <li>Sat: 10AM-5PM</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2024 Muckett. All rights reserved.</p></div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

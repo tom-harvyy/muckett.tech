@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muckett - Contact</title>
+    <title>Contact Muckett | Website hosting and tech help</title>
+    <meta name="description" content="Contact Muckett for website hosting, device repair, setup or a new website. Hosting is priced on enquiry. Email hello@muckett.tech or call 07727299900.">
+    <link rel="canonical" href="https://muckett.tech/contact/">
+    <meta property="og:title" content="Contact Muckett | Website hosting and tech help">
+    <meta property="og:description" content="Contact Muckett for website hosting, device repair, setup or a new website. Hosting is priced on enquiry. Email hello@muckett.tech or call 07727299900.">
+    <meta property="og:url" content="https://muckett.tech/contact/">
+    <meta property="og:image" content="https://muckett.tech/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="Muckett">
     <link rel="icon" type="image/png" href="../logo.png">
-    <meta name="description" content="Contact Muckett for professional tech services, support, and consultations.">
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://muckett.tech/#organization",
+                "name": "Muckett",
+                "url": "https://muckett.tech/",
+                "logo": "https://muckett.tech/logo.png",
+                "email": "hello@muckett.tech",
+                "telephone": "+447727299900"
+            },
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://muckett.tech/#localbusiness",
+                "name": "Muckett",
+                "url": "https://muckett.tech/",
+                "image": "https://muckett.tech/logo.png",
+                "email": "hello@muckett.tech",
+                "telephone": "+447727299900",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "17:00",
+                        "closes": "22:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Saturday",
+                        "opens": "10:00",
+                        "closes": "17:00"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
@@ -26,6 +72,7 @@
                     <li class="nav-item has-dropdown">
                         <a href="../services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
                         <ul class="dropdown-menu">
+                            <li><a href="../website-hosting/">Website Hosting</a></li>
                             <li><a href="../device-repair/">Device Repair</a></li>
                             <li><a href="../device-setup/">Device Setup</a></li>
                             <li><a href="../website-development/">Website Development</a></li>
@@ -47,15 +94,14 @@
         </nav>
     </header>
 
-    <!-- Hero Section (Contact) -->
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Contact <span class="accent">Muckett</span></h1>
-                <p class="hero-description">Reach out for support, quotes, or general enquiries. We respond quickly.</p>
+                <p class="hero-description">Ask about website hosting, a repair, setup or a new site. Hosting is priced on enquiry.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Send a Message</a>
-                    <a href="../services/" class="btn btn-secondary">View Services</a>
+                    <a href="../website-hosting/" class="btn btn-secondary">Website hosting</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -66,18 +112,15 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-description">
-                    Ready to solve your tech challenges? Contact us for a free consultation.
+                    Website hosting is priced on enquiry. Tell us about your site or device and we will come back to you.
                 </p>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
@@ -95,10 +138,10 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
-                        <span>Mon-Fri: 5PM-10PM, Sat: 10AM-5PM</span>
+                        <span>Mon–Fri 5PM–10PM, Sat 10AM–5PM</span>
                     </div>
                 </div>
-                
+
                 <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
                     <!-- Web3Forms required fields -->
                     <input type="hidden" name="access_key" value="bea4a7e8-4337-45ef-86f3-0240a29107fa">
@@ -120,12 +163,14 @@
                         <label for="service">Service Needed</label>
                         <select id="service" name="service" required>
                             <option value="">Select a service</option>
-                            <option value="device-repair">Device Repair & Troubleshooting</option>
-                            <option value="device-setup">Device Setup & Configuration</option>
+                            <option value="website-hosting">Website Hosting &amp; Care</option>
+                            <option value="device-repair">Device Repair &amp; Troubleshooting</option>
+                            <option value="device-setup">Device Setup &amp; Configuration</option>
                             <option value="website-development">Website Development</option>
-                            <option value="consultation">Free Consultation</option>
+                            <option value="consultation">General enquiry</option>
                         </select>
                     </div>
+                    <p class="form-note">Website hosting is priced on enquiry. Tell us a little about your site and we will get back to you.</p>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Tell us about your tech needs..."></textarea>
@@ -136,13 +181,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Muckett</h3>
-                    <p>Professional tech solutions for modern businesses and individuals.</p>
+                    <p>We host and look after business websites, with friendly local tech help when you need it.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -153,10 +197,11 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
+                        <li><a href="../website-hosting/">Website Hosting</a></li>
                         <li><a href="../device-repair/">Device Repair</a></li>
                         <li><a href="../device-setup/">Device Setup</a></li>
                         <li><a href="../website-development/">Website Development</a></li>
-                        <li><a href="./">Free Consultation</a></li>
+                        <li><a href="./">Contact for pricing</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -164,18 +209,17 @@
                     <ul>
                         <li>hello@muckett.tech</li>
                         <li>07727299900</li>
-                        <li>Mon-Fri: 5PM-10PM</li>
-                        <li>Sat: 10AM-5PM</li>
+                        <li>Mon–Fri 5PM–10PM</li>
+                        <li>Sat 10AM–5PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Muckett. All rights reserved.</p>
+                <p>&copy; 2026 Muckett. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Submission Success Modal -->
+
     <div id="formModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-backdrop"></div>
         <div class="modal-dialog" role="document">
