@@ -3,58 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Muckett | Independent local tech help</title>
-    <meta name="description" content="Muckett hosts and looks after small-business websites, plus device repair, setup and web development. Independent, friendly local tech help nearby.">
+    <title>About Muckett.tech — Colne, Lancashire</title>
+    <meta name="description" content="Independent tech and website help from Colne, in the Pendle area. Muckett.tech builds and hosts sites, and helps local businesses with everyday IT.">
     <link rel="canonical" href="https://muckett.tech/about/">
-    <meta property="og:title" content="About Muckett | Independent local tech help">
-    <meta property="og:description" content="Muckett hosts and looks after small-business websites, plus device repair, setup and web development. Independent, friendly local tech help nearby.">
-    <meta property="og:url" content="https://muckett.tech/about/">
-    <meta property="og:image" content="https://muckett.tech/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_GB">
-    <meta property="og:site_name" content="Muckett">
+    <meta property="og:title" content="About Muckett.tech — Colne, Lancashire">
+    <meta property="og:description" content="Independent tech and website help from Colne, in the Pendle area. Muckett.tech builds and hosts sites, and helps local businesses with everyday IT.">
+    <meta property="og:url" content="https://muckett.tech/about/">
+    <meta property="og:image" content="https://muckett.tech/logo.png">
+    <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/png" href="../logo.png">
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "@id": "https://muckett.tech/#organization",
-                "name": "Muckett",
-                "url": "https://muckett.tech/",
-                "logo": "https://muckett.tech/logo.png",
-                "email": "hello@muckett.tech",
-                "telephone": "+447727299900"
-            },
-            {
-                "@type": "LocalBusiness",
-                "@id": "https://muckett.tech/#localbusiness",
-                "name": "Muckett",
-                "url": "https://muckett.tech/",
-                "image": "https://muckett.tech/logo.png",
-                "email": "hello@muckett.tech",
-                "telephone": "+447727299900",
-                "openingHoursSpecification": [
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                        "opens": "17:00",
-                        "closes": "22:00"
-                    },
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": "Saturday",
-                        "opens": "10:00",
-                        "closes": "17:00"
-                    }
-                ]
-            }
-        ]
-    }
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "name": "Muckett.tech",
+  "legalName": "Tom Hepworth-Harvey trading as muckett.tech",
+  "url": "https://muckett.tech/",
+  "email": "hello@muckett.tech",
+  "telephone": "+447727299900",
+  "image": "https://muckett.tech/logo.png",
+  "areaServed": ["Colne", "Pendle", "Lancashire"],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "17:00", "closes": "22:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00"}
+  ]
+}
     </script>
 </head>
 <body>
@@ -63,27 +41,22 @@
             <div class="nav-container">
                 <div class="nav-logo">
                     <img src="../logo.png" alt="Muckett logo" class="logo-img" />
-                    <h2 class="logo-text">Muckett</h2>
+                    <span class="logo-text">Muckett</span>
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="../" class="nav-link">Home</a>
-                    </li>
+                    <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
                     <li class="nav-item has-dropdown">
                         <a href="../services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../website-hosting/">Website Hosting</a></li>
-                            <li><a href="../device-repair/">Device Repair</a></li>
-                            <li><a href="../device-setup/">Device Setup</a></li>
-                            <li><a href="../website-development/">Website Development</a></li>
+                            <li><a href="../website-hosting/">Website hosting</a></li>
+                            <li><a href="../website-development/">Website design</a></li>
+                            <li><a href="../device-repair/">Device repair</a></li>
+                            <li><a href="../device-setup/">Device setup</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="./" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../contact/" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="../colne/" class="nav-link">Colne</a></li>
+                    <li class="nav-item"><a href="../about/" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="../contact/" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-toggle">
                     <span class="bar"></span>
@@ -97,122 +70,76 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">About <span class="accent">Muckett</span></h1>
-                <p class="hero-description">Independent, friendly tech help. We host and look after small-business websites, and we help with devices when you need us.</p>
+                <h1 class="hero-title">A local tech and website service, <span class="accent">not a call centre</span></h1>
+                <p class="hero-description">Independent tech help for people and businesses in Colne and the Pendle area.</p>
                 <div class="hero-buttons">
-                    <a href="../contact/" class="btn btn-primary">Contact Us</a>
-                    <a href="../website-hosting/" class="btn btn-secondary">Website hosting</a>
+                    <a href="../contact/" class="btn btn-primary">Contact</a>
+                    <a href="../services/" class="btn btn-secondary">Services</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-visual">
-                    <i class="fas fa-circle-info"></i>
-                </div>
-            </div>
+            <div class="hero-image"><div class="hero-visual"><i class="fas fa-circle-info"></i></div></div>
         </div>
     </section>
-
-    <section id="about" class="about">
+    <section class="about">
         <div class="container">
             <div class="about-content">
                 <div>
-                    <h2 class="section-title">Who we are</h2>
-                    <p class="about-description">
-                        Muckett is independent local tech help for small businesses and households
-                        in the Colne, Nelson and Burnley area. We host and look after business
-                        websites — static hosting, updates and the technical side handled for you —
-                        and we still offer device repair, device setup and website development.
-                    </p>
-                    <p class="about-description">
-                        You get a named person to call, plain English, and on-site service when it
-                        is useful. Website hosting is priced on enquiry.
-                    </p>
+                    <h2 class="section-title">Why work with Muckett.tech</h2>
+                    <p class="about-description">I am Tom Hepworth-Harvey, trading as muckett.tech. I build and host websites, and I help local businesses with everyday IT. Straightforward, practical help from one person, not a call centre.</p>
                     <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Website hosting and ongoing care</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Device repair, setup and new websites</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Clear quotes — contact us for pricing</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>On-site service available</span>
-                        </div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Evening and Saturday hours, so you are not stuck waiting on a 9–5 shop.</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>On-site help for homes and businesses in Colne and across Pendle.</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Clear quotes before work starts.</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>I build and host websites, and I fix and set up the kit you already have.</span></div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <div class="stat-icon"><i class="fas fa-server"></i></div>
-                        <p class="stat-label">Website hosting and care</p>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-icon"><i class="fas fa-tools"></i></div>
-                        <p class="stat-label">Device repair and troubleshooting</p>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-icon"><i class="fas fa-cogs"></i></div>
-                        <p class="stat-label">Device setup and configuration</p>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-icon"><i class="fas fa-globe"></i></div>
-                        <p class="stat-label">Website development</p>
-                    </div>
+                <div>
+                    <h2 class="section-title">Colne and Pendle</h2>
+                    <p class="about-description">Colne is the base I talk about because that is where I am. I also help businesses in the rest of Pendle and nearby Lancashire. If you are not sure I cover you, just ask. <a href="../colne/">Websites and tech help in Colne</a>.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Work With Us</h2>
-                <p class="section-description">Have a question about hosting or another service? We would love to hear from you.</p>
-                <a class="btn btn-primary" href="../contact/">Get In Touch</a>
+                <h2 class="section-title">Work with me</h2>
+                <p class="section-description">Have a question or want to talk about a site or a stuck laptop? Get in touch.</p>
+                <a class="btn btn-primary" href="../contact/">Get in touch</a>
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Muckett</h3>
-                    <p>We host and look after business websites, with friendly local tech help when you need it.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <h3>Muckett.tech</h3>
+                    <p>Tom Hepworth-Harvey trading as muckett.tech. Independent tech help and website hosting for Colne, Pendle and Lancashire.</p>
+                    <p>Colne, Pendle, Lancashire.</p>
+                    <!-- UK street address: not published until Tom supplies one. Do not invent. -->
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="../website-hosting/">Website Hosting</a></li>
-                        <li><a href="../device-repair/">Device Repair</a></li>
-                        <li><a href="../device-setup/">Device Setup</a></li>
-                        <li><a href="../website-development/">Website Development</a></li>
-                        <li><a href="../contact/">Contact for pricing</a></li>
+                        <li><a href="../website-hosting/">Website hosting</a></li>
+                        <li><a href="../website-development/">Website design</a></li>
+                        <li><a href="../device-repair/">Device repair</a></li>
+                        <li><a href="../device-setup/">Device setup</a></li>
+                        <li><a href="../colne/">Colne and Pendle</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>hello@muckett.tech</li>
-                        <li>07727299900</li>
-                        <li>Mon–Fri 5PM–10PM</li>
-                        <li>Sat 10AM–5PM</li>
+                        <li><a href="mailto:hello@muckett.tech">hello@muckett.tech</a></li>
+                        <li><a href="tel:+447727299900">07727299900</a></li>
+                        <li>Mon–Fri: 5PM–10PM</li>
+                        <li>Sat: 10AM–5PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Muckett. All rights reserved.</p>
+                <p>&copy; 2026 Tom Hepworth-Harvey trading as muckett.tech. All rights reserved.</p>
             </div>
         </div>
     </footer>
