@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muckett - Website Development</title>
-  <meta name="description" content="Custom, fast, SEO-friendly websites for individuals and businesses - from landing pages to full sites.">
+  <title>Website development for small businesses | Muckett</title>
+  <meta name="description" content="Custom business websites and landing pages from Muckett. We build the site; hosting and ongoing care is a separate service. Contact us for pricing.">
+  <link rel="canonical" href="https://muckett.tech/website-development/">
+  <meta property="og:title" content="Website development for small businesses | Muckett">
+  <meta property="og:description" content="Custom business websites and landing pages from Muckett. We build the site; hosting and ongoing care is a separate service. Contact us for pricing.">
+  <meta property="og:url" content="https://muckett.tech/website-development/">
+  <meta property="og:image" content="https://muckett.tech/logo.png">
   <link rel="stylesheet" href="../styles.css">
   <link rel="icon" type="image/png" href="../logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Muckett",
+    "url": "https://muckett.tech",
+    "email": "hello@muckett.tech",
+    "telephone": "07727299900",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "17:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -23,9 +52,10 @@
           <li class="nav-item has-dropdown">
             <a class="nav-link" href="../services/">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
             <ul class="dropdown-menu">
+              <li><a href="../website-hosting/">Website Hosting</a></li>
+              <li><a href="./">Website Development</a></li>
               <li><a href="../device-repair/">Device Repair</a></li>
               <li><a href="../device-setup/">Device Setup</a></li>
-              <li><a href="./">Website Development</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="../about/">About</a></li>
@@ -41,7 +71,7 @@
     <div class="hero-container">
       <div class="hero-content">
         <h1 class="hero-title">Website <span class="accent">Development</span></h1>
-        <p class="hero-description">Modern, responsive, and SEO-friendly sites - built for speed and results.</p>
+        <p class="hero-description">Modern, responsive, SEO-friendly business sites and landing pages. We build the site; hosting and ongoing care is a separate service.</p>
         <div class="hero-buttons">
           <a href="../contact/" class="btn btn-primary">Start Your Project</a>
           <a href="#features" class="btn btn-secondary">Features</a>
@@ -56,7 +86,7 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">What You Get</h2>
-        <p class="section-description">Everything needed for a clean launch and easy maintenance.</p>
+        <p class="section-description">Everything needed for a clean launch. Hosting and looking after the live site is covered on our hosting page.</p>
       </div>
 
       <div class="services-grid">
@@ -73,25 +103,26 @@
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-rocket"></i></div>
-          <h3 class="service-title">Performance & SEO</h3>
-          <p class="service-description">Fast loads, best practices, and clean metadata for discoverability.</p>
+          <h3 class="service-title">Performance &amp; SEO</h3>
+          <p class="service-description">Fast loads, best practices, and clean metadata so search engines can understand the page. We do not promise rankings.</p>
           <ul class="service-features">
             <li>Optimized assets</li>
             <li>Semantic HTML</li>
-            <li>Meta & social tags</li>
-            <li>Core Web Vitals aware</li>
+            <li>Meta &amp; social tags</li>
+            <li>Landing pages and business sites</li>
           </ul>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-hands-helping"></i></div>
-          <h3 class="service-title">Support</h3>
-          <p class="service-description">Smooth handover and optional ongoing help as you grow.</p>
+          <h3 class="service-title">Build, then host</h3>
+          <p class="service-description">Development is the build. Once the site is ready, we can host it and look after it as a separate service.</p>
           <ul class="service-features">
-            <li>Clear docs & guidance</li>
-            <li>Easy updates</li>
+            <li>Clear docs &amp; guidance</li>
+            <li>Easy updates after launch</li>
             <li>Issue triage</li>
-            <li>Feature iterations</li>
+            <li>Host-and-care available separately</li>
           </ul>
+          <a href="../website-hosting/" class="service-link">Website hosting &amp; care <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -106,7 +137,7 @@
       <div class="footer-content">
         <div class="footer-section">
           <h3>Muckett</h3>
-          <p>Professional tech solutions for modern businesses and individuals.</p>
+          <p>We host and look after business websites, and help with other tech needs.</p>
           <div class="social-links">
             <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -117,9 +148,10 @@
         <div class="footer-section">
           <h4>Services</h4>
           <ul>
+            <li><a href="../website-hosting/">Website Hosting</a></li>
+            <li><a href="./">Website Development</a></li>
             <li><a href="../device-repair/">Device Repair</a></li>
             <li><a href="../device-setup/">Device Setup</a></li>
-            <li><a href="./">Website Development</a></li>
             <li><a href="../contact/">Free Consultation</a></li>
           </ul>
         </div>
@@ -133,7 +165,11 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom"><p>&copy; 2024 Muckett. All rights reserved.</p></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muckett. All rights reserved.</p>
+        <p class="footer-legal">Tom Hepworth-Harvey trading as muckett.tech</p>
+        <!-- UK geographic address to be added when Tom provides it. Do not invent a street, city, or postcode. -->
+      </div>
     </div>
   </footer>
 
