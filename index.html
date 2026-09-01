@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muckett - Professional Tech Services</title>
+    <title>Website hosting for small businesses | Muckett</title>
+    <meta name="description" content="We host and look after small-business websites — static hosting and ongoing care, plus device repair, setup and web development. Contact for pricing.">
+    <link rel="canonical" href="https://muckett.tech/">
+    <meta property="og:title" content="Website hosting for small businesses | Muckett">
+    <meta property="og:description" content="We host and look after small-business websites — static hosting and ongoing care, plus device repair, setup and web development. Contact for pricing.">
+    <meta property="og:url" content="https://muckett.tech/">
+    <meta property="og:image" content="https://muckett.tech/logo.png">
     <link rel="icon" type="image/png" href="logo.png">
-    <meta name="description" content="Professional tech services including device repair, setup solutions, and website development for individuals and businesses.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Muckett",
+      "url": "https://muckett.tech",
+      "email": "hello@muckett.tech",
+      "telephone": "07727299900",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "17:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
@@ -20,269 +48,178 @@
                     <h2 class="logo-text">Muckett</h2>
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="./" class="nav-link">Home</a>
-                    </li>
+                    <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
                     <li class="nav-item has-dropdown">
                         <a href="services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
                         <ul class="dropdown-menu">
+                            <li><a href="website-hosting/">Website Hosting</a></li>
+                            <li><a href="website-development/">Website Development</a></li>
                             <li><a href="device-repair/">Device Repair</a></li>
                             <li><a href="device-setup/">Device Setup</a></li>
-                            <li><a href="website-development/">Website Development</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="about/" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact/" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="about/" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact/" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <div class="nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    Professional Tech Solutions for 
-                    <span class="accent">Modern Businesses</span>
-                </h1>
-                <p class="hero-description">
-                    We provide comprehensive tech services including device repair, setup solutions, 
-                    and website development to keep your business running smoothly.
-                </p>
+                <h1 class="hero-title">We host and look after <span class="accent">business websites</span></h1>
+                <p class="hero-description">Static sites, hosting, and ongoing care for small businesses. Device repair, setup, and website development are still available. Contact us for pricing.</p>
                 <div class="hero-buttons">
-                    <a href="contact/" class="btn btn-primary">Get Started</a>
+                    <a href="contact/" class="btn btn-primary">Enquire about hosting</a>
                     <a href="services/" class="btn btn-secondary">Our Services</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-visual">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-            </div>
+            <div class="hero-image"><div class="hero-visual"><i class="fas fa-server"></i></div></div>
         </div>
     </section>
-
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Services</h2>
-                <p class="section-description">
-                    Comprehensive tech solutions tailored to your needs
-                </p>
+                <p class="section-description">We host and look after business websites, and still help with repair, setup, and new sites</p>
             </div>
-            
             <div class="services-grid">
-                <!-- Device Repair Service -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="service-title">Device Repair & Troubleshooting</h3>
-                    <p class="service-description">
-                        Expert diagnosis and repair of software issues on computers, phones, 
-                        tablets, and other devices. Fast, reliable solutions to get you back online.
-                    </p>
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 class="service-title">Website Hosting &amp; Care</h3>
+                    <p class="service-description">We host static business websites and look after them day to day — updates, checks, and a named person to call when something needs doing.</p>
+                    <ul class="service-features">
+                        <li>Static site hosting</li>
+                        <li>Ongoing care and updates</li>
+                        <li>A named person to contact</li>
+                        <li>Pricing on enquiry</li>
+                    </ul>
+                    <a href="website-hosting/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="service-title">Device Repair &amp; Troubleshooting</h3>
+                    <p class="service-description">Expert diagnosis and repair of software issues on computers, phones, tablets, and other devices. Fast, reliable solutions to get you back online.</p>
                     <ul class="service-features">
                         <li>Software troubleshooting</li>
-                        <li>Virus removal & security</li>
+                        <li>Virus removal &amp; security</li>
                         <li>Performance optimization</li>
                         <li>Data recovery services</li>
                     </ul>
                     <a href="device-repair/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Device Setup Service -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="service-title">Device Setup & Configuration</h3>
-                    <p class="service-description">
-                        Professional setup and configuration services for individuals and businesses. 
-                        From single devices to complete office networks.
-                    </p>
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3 class="service-title">Device Setup &amp; Configuration</h3>
+                    <p class="service-description">Professional setup and configuration services for individuals and businesses. From single devices to complete office networks.</p>
                     <ul class="service-features">
                         <li>New device configuration</li>
-                        <li>Network setup & security</li>
+                        <li>Network setup &amp; security</li>
                         <li>Business system integration</li>
-                        <li>Training & support</li>
+                        <li>Training &amp; support</li>
                     </ul>
                     <a href="device-setup/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Website Development Service -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
                     <h3 class="service-title">Website Development</h3>
-                    <p class="service-description">
-                        Custom website development for businesses of all sizes. Modern, responsive, 
-                        and optimized for performance and search engines.
-                    </p>
+                    <p class="service-description">Custom website development for businesses of all sizes. Modern, responsive landing pages and business sites. Hosting and care is a separate service.</p>
                     <ul class="service-features">
                         <li>Custom web design</li>
-                        <li>E-commerce solutions</li>
-                        <li>SEO optimization</li>
-                        <li>Ongoing maintenance</li>
+                        <li>Landing pages and business sites</li>
+                        <li>SEO-friendly markup</li>
+                        <li>Clear handover</li>
                     </ul>
                     <a href="website-development/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
+            <div class="about-content about-content-single">
                 <div class="about-text">
                     <h2 class="section-title">Why Choose Muckett?</h2>
-                    <p class="about-description">
-                        With years of experience in the tech industry, we provide reliable, 
-                        professional solutions that help individuals and businesses thrive in 
-                        the digital world.
-                    </p>
+                    <p class="about-description">Muckett is Tom Hepworth-Harvey trading as muckett.tech. We host and look after websites for small businesses, and we still help with device repair, setup, and website development.</p>
                     <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Expert technicians with proven experience</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Fast response times and reliable service</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Competitive pricing with transparent quotes</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Ongoing support and maintenance</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3 class="stat-number">100+</h3>
-                        <p class="stat-label">Software Issues Resolved</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="stat-number">50+</h3>
-                        <p class="stat-label">Systems Configured (Mobile + PCs)</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="stat-number">10+</h3>
-                        <p class="stat-label">Websites Built</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="stat-number">99%</h3>
-                        <p class="stat-label">Client Satisfaction</p>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Expert technicians with proven experience</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Fast response times and reliable service</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Clear quotes — contact us for pricing</span></div>
+                        <div class="feature"><i class="fas fa-check-circle"></i><span>Ongoing support and maintenance</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">
-                    Ready to solve your tech challenges? Contact us for a free consultation.
-                </p>
+                <p class="section-description">Ready to talk about hosting or another tech need? Contact us for a free consultation. Hosting and other services are priced on enquiry.</p>
             </div>
-            
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>07727299900</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>hello@muckett.tech</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Available for on-site service</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Mon-Fri: 5PM-10PM, Sat: 10AM-5PM</span>
-                    </div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><span>07727299900</span></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><span>hello@muckett.tech</span></div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Available for on-site service</span></div>
+                    <div class="contact-item"><i class="fas fa-clock"></i><span>Mon-Fri: 5PM-10PM, Sat: 10AM-5PM</span></div>
                 </div>
-                
-                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
-                    <!-- Web3Forms required fields -->
-                    <input type="hidden" name="access_key" value="bea4a7e8-4337-45ef-86f3-0240a29107fa">
-                    <input type="hidden" name="subject" value="New Contact via Muckett.tech">
-                    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important;">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service" name="service" required>
-                            <option value="">Select a service</option>
-                            <option value="device-repair">Device Repair & Troubleshooting</option>
-                            <option value="device-setup">Device Setup & Configuration</option>
-                            <option value="website-development">Website Development</option>
-                            <option value="consultation">Free Consultation</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your tech needs..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form-column">
+                    <p class="form-privacy">This form is sent via Web3Forms so we can reply. We use the details you provide only to respond to your enquiry.</p>
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
+                        <input type="hidden" name="access_key" value="bea4a7e8-4337-45ef-86f3-0240a29107fa">
+                        <input type="hidden" name="subject" value="New Contact via Muckett.tech">
+                        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important;">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="website-hosting">Website Hosting &amp; Care</option>
+                                <option value="website-development">Website Development</option>
+                                <option value="device-repair">Device Repair &amp; Troubleshooting</option>
+                                <option value="device-setup">Device Setup &amp; Configuration</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your tech needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Muckett</h3>
-                    <p>Professional tech solutions for modern businesses and individuals.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <p>We host and look after business websites, and help with other tech needs.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
+                        <li><a href="website-hosting/">Website Hosting</a></li>
+                        <li><a href="website-development/">Website Development</a></li>
                         <li><a href="device-repair/">Device Repair</a></li>
                         <li><a href="device-setup/">Device Setup</a></li>
-                        <li><a href="website-development/">Website Development</a></li>
                         <li><a href="contact/">Free Consultation</a></li>
                     </ul>
                 </div>
@@ -297,12 +234,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Muckett. All rights reserved.</p>
+                <p>&copy; 2026 Muckett. All rights reserved.</p>
+                <p class="footer-legal">Tom Hepworth-Harvey trading as muckett.tech</p>
+                <!-- UK geographic address to be added when Tom provides it. Do not invent a street, city, or postcode. -->
             </div>
         </div>
     </footer>
-    
-    <!-- Submission Success Modal -->
     <div id="formModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-backdrop"></div>
         <div class="modal-dialog" role="document">
@@ -312,7 +249,6 @@
             <button type="button" class="btn btn-primary modal-close">Close</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
