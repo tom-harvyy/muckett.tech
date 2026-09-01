@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found · Muckett</title>
+  <title>Page Not Found | Muckett</title>
   <meta name="robots" content="noindex">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
@@ -23,7 +23,15 @@
         </div>
         <ul class="nav-menu">
           <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="services/" class="nav-link">Services</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="services/" class="nav-link">Services <i class="fas fa-chevron-down dropdown-caret"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="website-hosting/">Website Hosting</a></li>
+              <li><a href="website-development/">Website Development</a></li>
+              <li><a href="device-repair/">Device Repair</a></li>
+              <li><a href="device-setup/">Device Setup</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a href="about/" class="nav-link">About</a></li>
           <li class="nav-item"><a href="contact/" class="nav-link">Contact</a></li>
         </ul>
@@ -31,7 +39,6 @@
       </div>
     </nav>
   </header>
-
   <main class="not-found">
     <div class="card">
       <h1>Page moved or not found</h1>
@@ -39,13 +46,11 @@
       <p><a class="btn btn-primary" href="/">Go to homepage</a></p>
     </div>
   </main>
-
   <script>
     (function() {
       var path = (window.location.pathname || '').toLowerCase();
       var query = window.location.search || '';
       var hash = window.location.hash || '';
-
       var map = {
         '/index.html': '/',
         '/about.html': '/about/',
@@ -53,14 +58,13 @@
         '/services.html': '/services/',
         '/device-repair.html': '/device-repair/',
         '/device-setup.html': '/device-setup/',
-        '/website-development.html': '/website-development/'
+        '/website-development.html': '/website-development/',
+        '/website-hosting.html': '/website-hosting/'
       };
-
       if (map[path]) {
         window.location.replace(map[path] + query + hash);
         return;
       }
-
       if (path.endsWith('.html')) {
         var target = path.slice(0, -5);
         if (target === '/index') target = '/';
@@ -69,5 +73,6 @@
       }
     })();
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
